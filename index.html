@@ -119,7 +119,7 @@ const $=s=>document.querySelector(s),TAU=Math.PI*2;
 const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 let items=[],hist=[];
 try{items=JSON.parse(localStorage.getItem('rl_items')||'null')}catch(e){}
-if(!Array.isArray(items))items=['Camiseta','Caneca','Adesivos','Mochila','Fone de ouvido','Squeeze'];
+if(!Array.isArray(items))items=[];
 const save=()=>{try{localStorage.setItem('rl_items',JSON.stringify(items))}catch(e){}};
 
 /* ---------- título ASCII ---------- */
